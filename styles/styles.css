@@ -1,0 +1,70 @@
+/*<editor-fold desc="universal + tags">*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="navigation">*/
+.top-nav {
+    background-color: black;
+    overflow: hidden;
+}
+.nav-link {
+    float: right;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.nav-link:hover {
+    border-bottom: white solid 1px;
+    padding-bottom: 5px;
+}
+/*<editor-fold desc="hamburger menu">*/
+.hamburger-menu {
+    display: none;
+    float: right;
+}
+.hamburger-icons {
+    height: 50px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.straight-line {
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: white;
+}
+@media screen and (max-width: 600px){
+    .nav-link {
+        display: none;
+    }
+    .hamburger-menu {
+        float: right;
+        display: block;
+    }
+    .top-nav.responsive {
+        position: relative;
+    }
+    .top-nav.responsive .hamburger-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .top-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.hide {
+    display: none;
+}
+/*</editor-fold>*/
+/*</editor-fold>*/
